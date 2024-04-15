@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Main_TV_Game_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Dice Game"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        style="@style/bigText"
+
+         />
+
+    <ImageView
+        android:id="@+id/Main_IV_DiceImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/dicegame"
+        android:layout_marginBottom="30sp"/>
+
+    <EditText
+        android:id="@+id/Main_ET_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/red"
+        android:inputType="text"
+
+        />
+    <EditText
+        android:id="@+id/Main_ET_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Lucky Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/red"
+        android:inputType="number"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/Main_Btn_Play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:textSize="20sp"
+            android:text="PLAY"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="50sp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

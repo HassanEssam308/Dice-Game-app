@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <VideoView
+            android:id="@+id/Win_VV_VideoCongratulations"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginBottom="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10sp"
+            android:gravity="center"
+            android:text="Congratulation!"
+            android:textSize="30sp"
+            style="@style/bigText"/>
+        <TextView
+            android:id="@+id/Win_TV_Tries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10sp"
+            android:textSize="20sp"
+            style="@style/italicText"
+            android:text="You Win After 2 Tries !"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10sp">
+            <Button
+                android:id="@+id/Win_Btn_PlayAgain"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10sp"
+                android:backgroundTint="@color/red"
+                android:textSize="18sp"
+                android:text="PLAY AGAIN"/>
+            <Button
+                android:id="@+id/Win_Btn_LogOut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10sp"
+                android:backgroundTint="@color/red"
+                android:textSize="20sp"
+                android:text="LOG OUT"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
